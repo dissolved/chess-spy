@@ -93,6 +93,18 @@ files = [
 unicode-backport = ["unicodedata2"]
 
 [[package]]
+name = "chess"
+version = "1.9.4"
+description = "A chess library with move generation and validation, Polyglot opening book probing, PGN reading and writing, Gaviota tablebase probing, Syzygy tablebase probing, and XBoard/UCI engine communication."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "chess-1.9.4-py3-none-any.whl", hash = "sha256:44d471b1ba71a4287c1bb9af3d6b472df37f07686ec52d5d5feb982b0fcfad34"},
+    {file = "chess-1.9.4.tar.gz", hash = "sha256:7f42d664f8975abe46e34bd7d131efd2bba65dc78bd1c226f554eb6ca4a9b381"},
+]
+
+[[package]]
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
@@ -576,4 +588,4 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4b9b23192f3ee78a06ad8b4f528ca723c123b47469ba691fc395e62aa0d36260"
+content-hash = "0a161d8eafd061e08cb3180e99f7040fd6150584bfcdeaea72d4e959c496b8f8"
