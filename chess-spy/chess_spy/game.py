@@ -1,7 +1,8 @@
-from sqlalchemy import Table, Column, Integer, String
+from sqlalchemy import Column, Integer
 from sqlalchemy.orm import relationship
 
-from database import association_tables, DatabaseTable
+from .database import association_tables, DatabaseTable
+
 
 class Game(DatabaseTable):
     __tablename__ = "games"
@@ -9,5 +10,5 @@ class Game(DatabaseTable):
     positions = relationship(
         "Position",
         secondary=association_tables["positions_games"],
-        back_populates="games"
+        back_populates="games",
     )

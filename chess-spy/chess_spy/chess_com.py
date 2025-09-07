@@ -28,7 +28,3 @@ class ChessCom:
         pgn_io = io.StringIO(game_data["pgn"])
         game = pgn.read_game(pgn_io)
         self.games.append(game)
-
-    # def games(self):
-    #     for game in self.games:
-    #         yield game["pgn"]

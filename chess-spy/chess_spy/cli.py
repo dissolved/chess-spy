@@ -1,9 +1,9 @@
 import typer
 
-from chess_com import ChessCom
-from position import Position
-from game import Game
-from database import SessionLocal, init_db
+from .chess_com import ChessCom
+from .position import Position
+from .game import Game
+from .database import SessionLocal, init_db
 
 
 def main(username: str):
@@ -26,5 +26,9 @@ def main(username: str):
         session.commit()
 
 
-if __name__ == "__main__":
-    typer.run(main)
+app = typer.Typer()
+
+
+@app.command()
+def run(username: str):
+    main(username)
