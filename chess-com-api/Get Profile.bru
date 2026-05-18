@@ -1,0 +1,11 @@
+meta {
+  name: Get Profile
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.chess.com/pub/player/{{CHESSCOM_USERNAME}}
+  body: none
+  auth: none
+}

@@ -13,6 +13,7 @@ def main(username: str):
 
     with SessionLocal() as session:
         for parsed_game in client.games:
+            # breakpoint()
             game_row = Game()
             session.add(game_row)
             session.flush()

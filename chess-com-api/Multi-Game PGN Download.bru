@@ -1,0 +1,11 @@
+meta {
+  name: Multi-Game PGN Download
+  type: http
+  seq: 9
+}
+
+get {
+  url: https://api.chess.com/pub/player/{{CHESSCOM_USERNAME}}/games/{{YYYY}}/{{MM}}/pgn
+  body: none
+  auth: none
+}

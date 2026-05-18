@@ -1,0 +1,11 @@
+meta {
+  name: Player online status
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api.chess.com/pub/player/{{CHESSCOM_USERNAME}}/is-online
+  body: none
+  auth: none
+}

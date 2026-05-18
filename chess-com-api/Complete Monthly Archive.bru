@@ -1,0 +1,11 @@
+meta {
+  name:  Complete Monthly Archive
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://api.chess.com/pub/player/{{CHESSCOM_USERNAME}}/games/{{YYYY}}/{{MM}}
+  body: none
+  auth: none
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Current Daily Chess
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://api.chess.com/pub/player/{{CHESSCOM_USERNAME}}/games
+  body: none
+  auth: none
+}
